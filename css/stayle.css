@@ -1,0 +1,14 @@
+/* Стили применяемые ко всем страницам */
+
+.conteiner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.img {
+    width: 100%;
+    height: auto;
+}
+body {
+    background-image: url(img\background.jpg);
+    background-color: aquamarine;
+}
