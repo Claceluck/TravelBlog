@@ -9,6 +9,11 @@
     height: auto;
 }
 body {
-    background-image: url(img\background.jpg);
+    background-image: url(../img/background.jpg);
     background-color: aquamarine;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
