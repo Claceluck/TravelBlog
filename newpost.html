@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить новую статью</title>
+    <link rel="icon" href="img\icon.png" type="images/png">
+    <link rel="stylesheet" href="css\stayle.css">
+</head>
+<body>
+    <h1>Добавить новую статью</h1>
+    <form id="avtor" name="avtor" action="#" method="POST">
+        <fieldset>
+            <legend><h3>Авторизация</h3></legend>
+        <div> 
+        <label for="email">
+            Логин:
+        <input id="email" type="email" name="email" placeholder="E-Mail" autocomplete required >
+    </label>
+    </div>
+    <div>
+        <label for="password">
+            Пароль:
+        <input id="password" type="password" name="password" placeholder="Password"  required  >
+    </label>
+    </div>
+    <div>
+        <label> 
+             Запомнить меня:
+            <input type="checkbox" name="remember">
+        </label>
+        </div>
+        <div>
+        <input type="submit" value="Войти" form="avtor">
+    </div>
+</fieldset>
+</form>
+<form id="newpost" name="newpost" action="#" method="POST">
+    <fieldset>
+        <legend><h3>Создать новую статью</h3></legend>
+        <div>
+            <label for="newpost"> Ваша история:
+           <textarea name="newpost" id="newpost" cols="30" rows="10" placeholder="Ваша история" required ></textarea> 
+        </label>
+        </div>
+        <div>
+            <label for="foto">
+                Добавить фотографии:
+                <input multiple id="foto" name="foto" type="file" accept="image/*" name="photo[]" >
+            </label>
+        </div>
+    </fieldset>
+    <div>
+        <input type="submit" value="Опубликовать" form="newpost">
+    </div>
+</form>
+</body>
+</html>

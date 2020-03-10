@@ -5,6 +5,7 @@
     <meta name="description" content="Travels">
     <meta name="Keywords" content="Travel, blog, life">
     <title>TravelBlog</title>
+    <link rel="stylesheet" href="css\stayle.css">
     <link rel="icon" href="img\icon.png" type="images/png">
 </head>
 <body>
@@ -12,7 +13,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="main.html">Здесь пишется история</a> <!--Главная страница ( сам блог)-->
+                    <a href="main.html">Здесь пишется история</a> <!--Главная страница    ( сам блог)-->
                 </li>
                 <li>
                     <a href="#">Подписаться </a> 
@@ -24,7 +25,7 @@
                     <a href="aboutme.html" target="_blank">Обо мне (Открыть в новом окне) </a> <!--Кто? Почему? Зачем?-->
                 </li>
                 <li>
-                    Путешествия
+                   <p class="menu">Путешествия</p> 
                     <ul>
                         <li>
                             <a href="#">Свершённые</a>
@@ -38,7 +39,7 @@
                     </ul>
                 </li>
                 <li>
-                    Яркие моменты
+                    <p class="menu">Яркие моменты</p>
                     <ul>
                         <li>
                             <a href="Galery.html">Фотогалерея</a>
@@ -55,24 +56,39 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Блог</h1>
+    <main class="conteiner">
+        <h1 >Здесь пишеться история:</h1>
         <div>
-            <h3>Пост от 03.03.2020</h3>
-            <img src="img\Tra1.jpg" alt="Мои путешествия" width="500" height="500">
-            <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Ullam debitis ex hic deserunt esse. Laudantium, blanditiis esse. Deleniti placeat animi provident porro beatae, quo error?</p>
+            <h3>Первое путешествие в Испанию</h3>
+            <h4>Автор:<a class="avtor" href="#">Иван Лосев </a> | 04.12.2014</h4>
+            <img src="img\ispan.jpg" alt="Мои путешествия">
+            <p><b>Чем привлекательны испанские курорты? Отличными ПЛЯЖАМИ, чистым морем и хорошим сервисом. Самостоятельное путешествие по Испании позволяет познакомиться с городами, которые сыграли уникальную роль в истории человечества, и творениями великих зодчих.<br>
+             Во время визита в эту страну туристы получают незабываемые впечатления от красивых ландшафтов, ярких национальных праздников, фестивалей и вкусной испанской кухни. При правильном планировании расходов самостоятельная поездка в Испанию получается вполне бюджетной.</p>
+             <a class="button" href="#"> <span>Читать дальше...</span></a>
         </div>
         <hr>
         <div>
-            <h3>Пост от 03.03.2020</h3>
-            <img src="img\Tra1.jpg" alt="Мои путешествия" width="500" height="500">
-            <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit.</q><br> Ullam debitis ex hic deserunt esse. Laudantium, blanditiis esse. Deleniti placeat animi provident porro beatae, quo error?</p>
+            <h3>Как я побывал в Мексике</h3>
+            <h4>Автор:<a class="avtor" href="#">Иван Лосев </a>| 04.12.2014</h4>
+            <img src="img\meks.jpg" alt="Мои путешествия">
+            <p><q>Привет друзья! Сегодня в посте решила рассказать об истории Мексики кратко. Конечно, об истории страны Мексика  уже написаны сотни книг, и сложно уместить такую многовековую историю в одной статье. Поэтому предлагаю вам просто несколько ключевых  моментов.</p>
+            <a class="button" href="#"> <span>Читать дальше...</span></a>
         </div>
         <div>
-            <h3>Пост от 03.03.2020</h3>
-            <img src="img\Tra1.jpg" alt="Мои путешествия" width="500" height="500">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis ex hic deserunt esse. Laudantium, blanditiis esse. Deleniti placeat animi provident porro beatae, quo error?</p>
+            <h3>Путешествие за 100$ возможно?</h3>
+            <h4>Автор:<a class="avtor" href="#">Иван Лосев </a>  | 04.12.2014</h4>
+            <img src="img\10.jpg" alt="Мои путешествия">
+            <p>Чтобы провести отпуск заграницей, не нужны тысячи долларов на банковском счету и туристические компании. Увидеть достопримечательности, пообщаться с новыми людьми и почувствовать душу страны, можно имея всего 100 долларов/евро в кармане.</p>
+            <a class="button" href="#"> <span>Читать дальше...</span></a>
         </div>
+        <div>
+            <h3>Северный полюс, вечная зима.</h3>
+            <h4>Автор:<a class="avtor" href="#">Иван Лосев </a>  | 04.12.2014</h4>
+            <img src="img\polus.jpg" alt="Мои путешествия">
+            <p>Путешествие на Северный полюс — мечта многих. Пройти по следам знаменитых покорителей Арктики — Фредерика Кука и Роберта Пири, Руаля Амундсена и Георгия Седова — отныне не удел одних лишь профессиональных путешественников и научных исследователей. Обладая внушительной суммой денег и будучи готовым отдать её во имя мечты, любой желающий может добраться до места встречи меридианов без всякого риска для жизни и даже в определённом комфорте.</p>
+            <a class="button" href="#"> <span>Читать дальше...</span></a>
+        </div>
+        <span class="up-button"> ^</p> </span>
     </main>
     <footer>
         <section>

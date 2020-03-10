@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="icon" href="img\icon.png" type="images/png">
+    <link rel="stylesheet" href="css\registr.css">
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <fieldset>
+        <legend><h3>Личные данные</h3></legend>
+    <form id="regitr" name="regitr" action="#" method="POST">
+        <div>
+            <label for="name">
+                Имя:
+                <input id="name" type="text" name="name" autocomplete required placeholder="Имя" >
+            </label>
+        </div>
+        <div>
+            <label for="lastname">
+                Фамилия:
+                <input id="lastname" type="text" name="lastname" autocomplete required placeholder="Фамилия" >
+            </label>
+        </div>
+        <div>
+            <label for="lastname2">
+                Отчество:
+                <input id="lastname2" type="text" name="lastname" autocomplete required placeholder="Отчество если есть">
+            </label>
+        </div>
+        <div>
+            <label>
+                Ж
+            <input type="radio" name="sex" value="female">
+        </label>
+             <label>
+                М
+            <input type="radio" name="sex" value="man" >
+        </label>
+        </div>
+        <div> 
+            <label for="email">
+                Ваша почта:
+            <input id="email" type="email" name="email" placeholder="E-Mail" autocomplete required >
+        </label>
+        </div>
+        <div>
+            <label for="password">
+                Пароль:
+            <input id="password" type="password" name="password" placeholder="Password"  required  >
+        </label>
+        </div>
+            <div>
+                <label for="password2">
+                    Повторите пароль:
+                <input id="password2" type="password" name="password" placeholder="Password"  required >
+            </label>
+            </div>
+            <div>
+                <label for="date">
+                    Дата рождения:
+                    <input id="date" type="date" name="date"  required>
+            </div>
+            <div>
+                <label for="foto">
+                    Ваша фотография:
+                    <input id="foto" name="foto" type="file" accept="image/*" name="photo" >
+                </label>
+            </div>
+            <div>
+                <label for="city"> Город проживания: </label>
+                <select name="city" id="city" size="1" >
+                    <optgroup label="Города России">
+                    <option value="spb" selected> Санкт-петербург</option>
+                    <option value="ek">Екатеренбург</option>
+                    <option value="st">Старый-Оскол</option>
+                    <option value="nov">Новгород</option>
+                    <option value="psk">Псков</option>
+                </optgroup>
+                </select>
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend><h3>Немного о себе:</h3></legend>
+        <div>
+            <label for="were">
+                Уже были:
+            <textarea name="were" id="were" cols="30" rows="10" placeholder="Какие страны вы посетили?"></textarea>
+        </label>
+        </div>
+        <div>
+            <label for="plan">
+                Ваши планы:
+            <textarea name="plan" id="plan" cols="30" rows="10" placeholder="Какие страны планируете посетить?"></textarea>
+        </label>
+        </div>
+        <div>
+            <label for="skill"> Ваш опыт путешествий: </label>
+            <select name="skill" id="skill" size="1" >
+                <optgroup label="Стаж путешествий">
+                <option value="1" selected>Начинающий</option>
+                <option value="2">Бывал в 2-3 путешествиях</option>
+                <option value="3">Опытный путешественник</option>
+                <option value="4">Бывалый</option>
+                <option value="000">Вся моя жизнь и есть путешествие</option>
+            </optgroup>
+            </select>
+        </div>
+    </fieldset>
+</form>
+<div>
+        <p>Нажимая кнопку Регистрация, вы принимаете Условия, Политику использования данных и Политику в отношении файлов cookie.</p>
+        <input type="submit" value="Регистрация" form="regitr">
+        <input type="reset" value="Сборс" form="regitr">
+        <a href="main.html"><input type="button" value="Вернуться на главную" ></a>
+    </div>
+</body>
+</html>
