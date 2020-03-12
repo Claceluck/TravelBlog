@@ -10,22 +10,22 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="main.html">Здесь пишется история</a> <!--Главная страница ( сам блог)-->
+        <nav class="conteiner menu">
+            <ul class="flex-row">
+                <li class="flex-2 content-center">
+                    <a href="main.html">Здесь пишется история</a> <!--Главная страница    ( сам блог)-->
                 </li>
-                <li>
+                <li class="flex-2 content-center">
                     <a href="#">Подписаться </a> 
                 </li>
-                <li>
-                    <a href="#">Где я сейчас | Ход путешествия </a> 
+                <li class="flex-2 content-center">
+                    <a href="#">Где я сейчас</a> 
                 </li>
-                <li>
-                    <a href="aboutme.html">Обо мне </a> <!--Кто? Почему? Зачем?-->
+                <li class="flex-2 content-center">
+                    <a href="aboutme.html">Обо мне</a> <!--Кто? Почему? Зачем?-->
                 </li>
-                <li>
-                    Путешествия
+                <li class="flex-2 content-center">
+                   <a href="#">Путешествия</a> 
                     <ul>
                         <li>
                             <a href="#">Свершённые</a>
@@ -34,15 +34,15 @@
                             <a href="#">В планах</a>
                         </li>
                         <li>
-                            <a href="#">Календарь| Планировщик</a>
+                            <a href="#">Календарь Планировщик</a>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    Яркие моменты
+                <li class="flex-2 content-center">
+                    <a href="#">Яркие моменты</a>
                     <ul>
                         <li>
-                            <a href="Galery.html">Галерея</a>
+                            <a href="Galery.html">Фотогалерея</a>
                         </li>
                         <li>
                             <a href="#">Видео</a>
@@ -56,36 +56,59 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
-        <h1>Здесь вы можете посмотреть все фотографии из мест где я был.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, beatae.</p>
-        </div>
-        <div>
-            <img src="img\Tra1.jpg" alt="Мои путешествия" width="500" height="500">
-            <img src="img/tra2.jpeg" alt="Мои путешествия" width="500" height="500"> 
-            <img src="img/tra3.jpg" alt="Мои путешествия" width="500" height="500">
-            <img src="img/tra4.jpg" alt="Мои путешествия" width="500" height="500">
-        </div>
-    </main>
-    <footer>
-        <section>
+    <main class="conteiner">
+    <div>
+        <h1>Здесь вы можете посмотреть все фотографии из мест где я был:</h1>
+    </div>
+        <div class="flex-row wrap galery">
+            <div class="flex-5">
+                <a href=""><img src="https://picsum.photos/700"></a>
+            </div>
+           <div class="flex-5 flex-row wrap">
+               <div class="flex-5"><a href=""><img src="https://picsum.photos/700"></a></div>
+               <div class="flex-5"><a href=""><img src="https://picsum.photos/700"></a></div>
+               <div class="flex-5"><a href=""><img src="https://picsum.photos/700"></a></div>
+               <div class="flex-5"><a href=""><img src="https://picsum.photos/700"></a></div>
+            </div>
+    </div>
+    <div>
+        <h1>Все фотографии</h1>
+    </div>
+        <div class="flex-row wrap galery">
+            <div class="flex-8">
+                <a href=""><img src="https://picsum.photos/700"></a>
+            </div>
+                <div class="flex-8 flex-row wrap">
+                    <div class="flex-8"><a href=""><img src="https://picsum.photos/700"></a></div>
+                    <div class="flex-8"><a href=""><img src="https://picsum.photos/700"></a></div>
+                    <div class="flex-8"><a href=""><img src="https://picsum.photos/700"></a></div>
+                    <div class="flex-8"><a href=""><img src="https://picsum.photos/700"></a></div>
+                    <div class="flex-8"><a href=""><img src="https://picsum.photos/700"></a></div>
+                    <div class="flex-8"><a href=""><img src="https://picsum.photos/700"></a></div>
+                </div>
+            </div>
+        </main>
+    <footer class="botmenu">
+        <section class="conteiner">
             <nav>
-                <ul>
-                    <nav>
-                        <h5>Я в соц сетях:</h5>
+                <ul class="flex-row flex-center">
+                    <li>
                         <a href="#">VK</a>
-                        <a href="#">FB</a>
-                        <a href="#">INST</a>
-                    </nav>
+                    </li>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">EMAIL</a>
+                    </li>
+                    <li>
+                        <a href="#">Telegram</a>
+                    </li>
                 </ul>
             </nav>
-        </section>
-        <section>
-            <h5>Связаться со мной</h5>
-            <a href="#">EMAIL</a>
-            <a href="#">Telegram</a>
-        </section>
     </footer>
 </body>
 </html>

@@ -1,3 +1,20 @@
-@import "css\stayle.css"
 
- 
+.flex-row{
+     display: flex;
+     flex-direction: row;
+ }
+ .flex-2{
+    flex: 16.66%;
+}
+.flex-center{
+    justify-content: space-between;
+}
+.flex-5{
+    flex: 50%;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flex-8 {
+    flex: 20%;
+}
