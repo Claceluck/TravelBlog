@@ -2,57 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Добавить новую статью</title>
-    <link rel="icon" href="img\icon.png" type="images/png">
+    <meta name="description" content="Travels">
+    <meta name="Keywords" content="Travel, blog, life">
+    <title>TravelBlog</title>
     <link rel="stylesheet" href="css\stayle.css">
+    <link rel="icon" href="img\icon.png" type="images/png">
 </head>
 <body>
-    <h1>Добавить новую статью</h1>
-    <form id="avtor" name="avtor" action="#" method="POST">
-        <fieldset>
-            <legend><h3>Авторизация</h3></legend>
-        <div> 
-        <label for="email">
-            Логин:
-        <input id="email" type="email" name="email" placeholder="E-Mail" autocomplete required >
-    </label>
-    </div>
-    <div>
-        <label for="password">
-            Пароль:
-        <input id="password" type="password" name="password" placeholder="Password"  required  >
-    </label>
-    </div>
-    <div>
-        <label> 
-             Запомнить меня:
-            <input type="checkbox" name="remember">
+    <header>
+        <nav class="conteiner menu">
+            <ul class="flex-row">
+                <li class="flex-2 content-center">
+                    <a href="main.html">Здесь пишется история</a> <!--Главная страница    ( сам блог)-->
+                </li>
+                <li class="flex-2 content-center">
+                    <a href="#">Подписаться </a> 
+                </li>
+                <li class="flex-2 content-center">
+                    <a href="registr.html">Регистрация</a> 
+                </li>
+                <li class="flex-2 content-center">
+                    <a href="aboutme.html">Обо мне</a> <!--Кто? Почему? Зачем?-->
+                </li>
+                <li class="flex-2 content-center">
+                   <a href="#">Путешествия</a> 
+                    <ul>
+                        <li>
+                            <a href="#">Свершённые</a>
+                        </li>
+                        <li>
+                            <a href="#">В планах</a>
+                        </li>
+                        <li>
+                            <a href="#">Календарь Планировщик</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="flex-2 content-center">
+                    <a href="#">Яркие моменты</a>
+                    <ul>
+                        <li>
+                            <a href="Galery.html">Фотогалерея</a>
+                        </li>
+                        <li>
+                            <a href="#">Видео</a>
+                        </li>
+                        <li>
+                            <a href="Story.html">Истории</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Добавить новую статью</h1>
+        <form id="avtor" name="avtor" action="#" method="POST">
+            <fieldset>
+                <legend><h3>Авторизация</h3></legend>
+            <div> 
+            <label for="email">
+                Логин:
+            <input id="email" type="email" name="email" placeholder="E-Mail" autocomplete required >
         </label>
         </div>
         <div>
-        <input type="submit" value="Войти" form="avtor">
-    </div>
-</fieldset>
-</form>
-<form id="newpost" name="newpost" action="#" method="POST">
-    <fieldset>
-        <legend><h3>Создать новую статью</h3></legend>
-        <div>
-            <label for="newpost"> Ваша история:
-           <textarea name="newpost" id="newpost" cols="30" rows="10" placeholder="Ваша история" required ></textarea> 
+            <label for="password">
+                Пароль:
+            <input id="password" type="password" name="password" placeholder="Password"  required  >
         </label>
         </div>
         <div>
-            <label for="foto">
-                Добавить фотографии:
-                <input multiple id="foto" name="foto" type="file" accept="image/*" name="photo[]" >
+            <label> 
+                 Запомнить меня:
+                <input type="checkbox" name="remember">
             </label>
+            </div>
+            <div>
+            <input type="submit" value="Войти" form="avtor">
         </div>
     </fieldset>
-    <div>
-        <input type="submit" value="Опубликовать" form="newpost">
-    </div>
-</form>
+    </form>
+    <form id="newpost" name="newpost" action="#" method="POST">
+        <fieldset>
+            <legend><h3>Создать новую статью</h3></legend>
+            <div>
+                <label for="newpost"> Ваша история:
+               <textarea name="newpost" id="newpost" cols="30" rows="10" placeholder="Ваша история" required ></textarea> 
+            </label>
+            </div>
+            <div>
+                <label for="foto">
+                    Добавить фотографии:
+                    <input multiple id="foto" name="foto" type="file" accept="image/*" name="photo[]" >
+                </label>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Опубликовать" form="newpost">
+        </div>
+    </form>
+    </main>
+    <footer class="botmenu">
+        <section class="conteiner">
+            <nav>
+                <ul class="flex-row flex-center">
+                    <li>
+                        <a href="#">VK</a>
+                    </li>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">EMAIL</a>
+                    </li>
+                    <li>
+                        <a href="#">Telegram</a>
+                    </li>
+                </ul>
+            </nav>
+    </footer>
 </body>
 </html>
