@@ -3,12 +3,22 @@
      display: flex;
      flex-direction: row;
  }
+ .row {
+    flex-direction: row; 
+ }
+ .flex-center{
+    justify-content: space-between;
+ }
+ .center {
+     justify-content: space-around;
+ }
  .flex-2{
     flex: 16.66%;
 }
-.flex-center{
-    justify-content: space-between;
+.flex-4 {
+    flex: 33.33%;
 }
+
 .flex-5{
     flex: 50%;
 }
@@ -18,9 +28,7 @@
 .flex-8 {
     flex: 20%;
 }
- /* Header  */
 
- /* footer  */
 
 
  
