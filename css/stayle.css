@@ -138,3 +138,71 @@ ul a{
 /* .botmenu a {
     display: block;
 } */
+
+ /* footer  */
+footer .social a {
+    height: 98px;
+    width: 98px;
+    display: inline-block;
+    background: url(../img/sprites.png);
+    background-repeat: no-repeat;
+}
+footer a.facebook {
+    background-position: 0 0;
+}
+footer a.youtube {
+    background-position: -200px 0;
+}
+footer a.twitter {
+    background-position: -500px 0;
+}
+footer a.instagram {
+    background-position: -300px 0;
+}
+footer a.linked {
+    background-position: -400px 0;
+}
+/* Модальное окно */
+
+.modal {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    right: 40%;
+    background:rgb(90, 197, 230);
+    padding: 30px;
+
+    transition: all 1s;
+}
+
+.modal:target {
+    opacity: 1;
+}
+
+.modal:not(:target) {  
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+}
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* Выпадающее меню */
+
+.submenu {
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    transition: all 0.5s;
+}
+
+ul li:hover .submenu {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}
