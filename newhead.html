@@ -6,7 +6,7 @@
     <meta name="Keywords" content="Travel, blog, life">
     <title>TravelBlog</title>
     <link rel="stylesheet" href="css\stayle.css">
-    <link rel="icon" href="img\icon.png" type="images/png">
+    <link rel="icon" href="img/icon.png" type="images/png">
 </head>
 <body>
     <header>
@@ -78,9 +78,19 @@
     <!-- Модальное окно -->
     <section class="modal" id="auth">
         <form class="flex-column" name="auth" action="#" method="post">
+
+            <label for="email">Ваш емейл:</label>
             <input type="email" name="email" placeholder="Введите Ваш e-mail">
+
+            <label for="pwd">Ваш пароль:</label>
             <input type="password" name="pwd" placeholder="Введите Ваш пароль">
+
             <input type="submit" value="Войти">
+
+            <label> 
+            Запомнить меня:
+            <input type="checkbox" checked="checked" name="remember">
+            </label>
         </form>
         <a class="close-modal" href="#0">X</a>
     </section>

@@ -4,55 +4,41 @@
     <meta charset="UTF-8">
     <meta name="description" content="Travels">
     <meta name="Keywords" content="Travel, blog, life">
-    <title>TravelBlog</title>
+    <title>Обо мне</title>
     <link rel="stylesheet" href="css\stayle.css">
     <link rel="icon" href="img\icon.png" type="images/png">
 </head>
 <body>
     <header>
-        <nav class="conteiner menu">
-            <ul class="flex-row">
-                <li class="flex-2 content-center">
-                    <a href="main.html">Здесь пишется история</a> <!--Главная страница    ( сам блог)-->
+        <nav class="conteiner menu content-center">
+            <ul class="flex-row"> 
+                <li class="flex-4">
+                    <a href="main.html">Здесь пишется история</a>
                 </li>
-                <li class="flex-2 content-center">
-                    <a href="#">Подписаться </a> 
+                <li class="flex-4">
+                    <a href="newpost.html">Новая запись</a> 
                 </li>
-                <li class="flex-2 content-center">
-                    <a href="registr.html">Регистрация</a> 
-                </li>
-                <li class="flex-2 content-center">
-                    <a href="aboutme.html">Обо мне</a> <!--Кто? Почему? Зачем?-->
-                </li>
-                <li class="flex-2 content-center">
-                   <a href="#">Путешествия</a> 
-                    <ul>
-                        <li>
-                            <a href="#">Свершённые</a>
-                        </li>
-                        <li>
-                            <a href="#">В планах</a>
-                        </li>
-                        <li>
-                            <a href="#">Календарь Планировщик</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="flex-2 content-center">
-                    <a href="#">Яркие моменты</a>
-                    <ul>
-                        <li>
-                            <a href="Galery.html">Фотогалерея</a>
-                        </li>
-                        <li>
-                            <a href="#">Видео</a>
-                        </li>
-                        <li>
-                            <a href="Story.html">Истории</a>
-                        </li>
-                    </ul>
-                </li>
-
+                <ul class="flex-4">
+                    <li>
+                       <a href="#">Интересное</a> 
+                         <ul class="submenu">
+                            <li>
+                                <a href="Galery.html">Фотогалерея</a> 
+                            </li>
+                            <li>
+                                 <a href="aboutme.html">Обо мне</a> 
+                            </li>
+                         </ul>
+                    </li>
+                </ul>
+                <ul class="flex-4">
+                    <li>
+                        <a href="registr.html">Регистрация</a>
+                    </li> 
+                    <li>
+                        <a href="#auth">Вход</a>
+                    </li>
+                </ul>
             </ul>
         </nav>
     </header>
@@ -103,27 +89,54 @@
             </p>
         </div>
     </main>
-    <footer class="botmenu">
-        <section class="conteiner">
-            <nav>
-                <ul class="flex-row flex-center">
-                    <li>
-                        <a href="#">VK</a>
-                    </li>
-                    <li>
-                        <a href="#">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="#">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="#">EMAIL</a>
-                    </li>
-                    <li>
-                        <a href="#">Telegram</a>
-                    </li>
-                </ul>
+    <footer class="conteiner content-center">
+        <div class="flex-row">
+        <section class="flex-4">
+            <h5> Информация</h5>
+            <nav class="flex-column">
+                <a href="#">Правила сайта</a>
+                <a href="#">Вакансии</a>
             </nav>
+        </section>
+        <section class="flex-4 social">
+            <h5>Мы в соц.сетях</h5>
+            <nav class="flex">
+                <a class="facebook" href="#"></a>
+                <a class="youtube" href="#"></a>
+                <a class="twitter" href="#"></a>
+                <a class="instagram" href="#"></a>
+                <a class="linked" href="#"></a>
+            </nav>
+        </section>
+        <section class="flex-4">  
+            <h5>Помощь</h5>
+            <nav class="flex-column">
+                <a href="#">Техподдержка</a>
+            </nav>
+        </section>
+        <section class="flex-4">
+            <h5>© 2020 TravelBlog </h5>
+        </section>
+         </div>
     </footer>
+    <!-- Модальное окно -->
+    <section class="modal" id="auth">
+        <form class="flex-column" name="auth" action="#" method="post">
+
+            <label for="email">Ваш емейл:</label>
+            <input type="email" name="email" placeholder="Введите Ваш e-mail">
+
+            <label for="pwd">Ваш пароль:</label>
+            <input type="password" name="pwd" placeholder="Введите Ваш пароль">
+
+            <input type="submit" value="Войти">
+
+            <label> 
+            Запомнить меня:
+            <input type="checkbox" checked="checked" name="remember">
+            </label>
+        </form>
+        <a class="close-modal" href="#0">X</a>
+    </section>
 </body>
 </html>

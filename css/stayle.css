@@ -1,5 +1,5 @@
-@import "flexbox.css";
-@import "registr.css";
+@import "flexbox.css"; @import "registr.css"; @import "form.css";
+
 
 *{
     padding: 0;
@@ -72,6 +72,7 @@ img:hover {
 main h3 {
     text-decoration-line: underline;
 }
+/* Кнопка "чиатать далее" */
 
 /* .button {
     color: yellow;
@@ -130,6 +131,7 @@ ul a{
 }
 .menu {
     padding-top: 20px;
+    font-size: large;
 }
 .botmenu {
     margin-top: 20px;
@@ -166,12 +168,11 @@ footer a.linked {
 
 .modal {
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 40%;
     right: 40%;
     background:rgb(90, 197, 230);
     padding: 30px;
-
     transition: all 1s;
 }
 

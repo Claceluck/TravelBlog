@@ -1,0 +1,29 @@
+form :focus {
+    outline: none;
+    border-color: lightblue;
+}
+
+/* textarea:valid,
+input:in-range,
+input[type="text"]:valid {
+    border: 1px solid green;
+} */
+input,textarea,select {
+    border: 1px solid lightskyblue;
+}
+form :required + span:before {
+    content: "\2690";
+    font-weight: bolder;
+    color: red;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+form :required:focus:valid + span:before,
+form :required:not(:focus):valid + span:before {
+    content: "\2691";
+    font-weight: bolder;
+    color: teal;
+    margin-left: 10px;
+    font-size: 20px;
+}
