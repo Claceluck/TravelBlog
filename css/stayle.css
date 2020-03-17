@@ -175,7 +175,6 @@ footer a.linked {
     padding: 30px;
     transition: all 1s;
 }
-
 .modal:target {
     opacity: 1;
 }
@@ -190,6 +189,7 @@ footer a.linked {
     top: 10px;
     right: 10px;
 }
+
 /* Выпадающее меню */
 
 .submenu {
